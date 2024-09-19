@@ -1,0 +1,43 @@
+.messages {
+  display: flex;
+  gap: 20px;
+}
+.owner {
+  flex-direction: row-reverse;
+}
+.owner > .messagesContent > p {
+  background: #5f58d8;
+}
+
+.messagesInfo {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  color: #5c6463;
+  margin-bottom: 20px;
+}
+
+.messagesInfo > img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.messagesContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  max-width: 60%;
+}
+.messagesContent > p {
+  background: #fff;
+  width: auto;
+  padding: 5px;
+  max-width: 200px;
+  border-radius: 0 10px 10px 10px;
+}
+.messagesContent > img {
+  height: 200px;
+  width: 200px;
+  padding: 5px;
+}

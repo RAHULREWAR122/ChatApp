@@ -1,0 +1,64 @@
+.Chats {
+  /* width: calc(100% - 25%); */
+  /* max-width: calc(100% - 200px); */
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.showChats {
+  background: skyblue;
+  overflow: scroll;
+  height: calc(100% - 85px);
+}
+
+.sendMsgs {
+  position: absolute;
+  background: #000;
+  opacity: 5;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sendMsgs > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.sendMsgs > div > label > img {
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+}
+.sendMsgs > input {
+  width: 100%;
+  height: 80%;
+  margin-right: 2px;
+  border: none;
+  outline: none;
+}
+.sendMsgs > div > img {
+  padding: 5px;
+  width: 30px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.sendMsgs > div > img:hover {
+  background: red;
+}
+
+
+.showChats::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.showChats {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

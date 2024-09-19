@@ -1,0 +1,95 @@
+.AllUsers {
+  width: 100%;
+  height: calc(100% - 50px);
+  position: relative;
+  background: #483f3f;
+  overflow: scroll;
+}
+.searchbar {
+  height: 40px;
+}
+.searchbar > input {
+  height: 40px;
+  width: 98%;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  font-size: 1.1rem;
+}
+.searchbar > input::placeholder {
+  color: white;
+}
+.users {
+  margin-top: 20px;
+}
+
+.showUsers > img {
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+}
+.showUsers {
+  border-bottom: 1px solid yellow;
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  gap: 20px;
+  background: #171978;
+  color: white;
+}
+.showUsers:hover {
+  background: #0a448a;
+  cursor: pointer;
+}
+
+.showUsers > div {
+  display: flex;
+  flex-direction: column;
+}
+.showUsers > div > span {
+  font-size: 0.6rem;
+  color: cadetblue;
+}
+
+.userInfo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background: yellow;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+.userInfo > img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.userInfo > button {
+  background: red;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 750px) {
+  .userInfo {
+    display: none;
+  }
+}
+
+.AllUsers::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.AllUsers {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

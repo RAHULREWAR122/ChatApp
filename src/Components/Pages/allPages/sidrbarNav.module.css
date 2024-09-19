@@ -1,0 +1,34 @@
+.sideNav {
+  height: 50px;
+  background: #111139;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.userInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  gap: 10px;
+  color: white;
+}
+.userInfo > img {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+}
+.userInfo > button {
+  border: none;
+  outline: none;
+  padding: 3px;
+  background: gray;
+  color: aliceblue;
+  margin-right: 5px;
+  cursor: pointer;
+}

@@ -1,0 +1,54 @@
+.chatsNav {
+  height: 50px;
+  background: #24245f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.userName {
+  color: white;
+}
+
+.userCalling {
+  margin-right: 10px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+.userCalling > img {
+  height: 30px;
+  width: 30px;
+  margin: 0 2px 0 2px;
+  cursor: pointer;
+  padding: 5px;
+}
+.userCalling > img:hover {
+  background: #4187a3;
+}
+
+.userInfo {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  width: 60%;
+}
+.userInfo > img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.userInfo > h3 {
+  color: aliceblue;
+}
+
+@media screen and (max-width: 960px) {
+  .userInfo {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .userInfo {
+    display: none;
+  }
+}
